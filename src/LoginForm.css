@@ -1,0 +1,74 @@
+/* src/LoginForm.css */
+body{
+    
+    display: grid;
+    place-items: center;
+    
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 200px;
+  }
+  
+  .image-slider {
+    display: flex;
+    overflow: hidden;
+    width: 300px;
+  }
+  
+  .image-slider img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    animation: slide 20s linear infinite;
+    padding: 2px;
+  }
+  
+  @keyframes slide {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-500px); }
+  }
+  
+  .login-form {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid orangered;
+    border-radius: 5px;
+    width: 300px;
+    background-image: linear-gradient(#3e32a8, #e310c7) ;
+  }
+  
+  .login-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    background-image: linear-gradient(red, yellow);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  
+  .login-form input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .login-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .login-form button:hover {
+    background-color: #0056b3;
+  }
+  
